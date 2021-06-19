@@ -21,8 +21,8 @@
 ## Installation
 
 ```sh
-1. git clone repo
-2. cd repo
+1. git clone https://github.com/MartinN94/docker-laravel-container.git
+2. cd docker-laravel-container
 3. docker-compose up -d --build
 4. open localhost:8100 && 8101 in browser and check for welcome screen && phpmyadmin
 5. rm -rf src/public
