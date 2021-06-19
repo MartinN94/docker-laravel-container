@@ -21,14 +21,14 @@
 ## Installation
 
 ```sh
-1. git clone https://github.com/MartinN94/docker-laravel-container.git
-2. cd docker-laravel-container
-3. docker-compose up -d --build
-4. open localhost:8100 && 8101 in browser and check for welcome screen && phpmyadmin
-5. rm -rf src/public
-6. docker-compose run --rm composer create-project laravel/laravel .
-7. docker-compose exec php chown -R www-data:www-data /var/www/html/storage
-8. docker-compose exec php chown -R www-data:www-data /var/www/html/bootstrap/cache
+git clone https://github.com/MartinN94/docker-laravel-container.git
+cd docker-laravel-container
+docker-compose up -d --build
+open localhost:8100 && 8101 in browser and check for welcome screen && phpmyadmin
+rm -rf src/public
+docker-compose run --rm composer create-project laravel/laravel .
+docker-compose exec php chown -R www-data:www-data /var/www/html/storage
+docker-compose exec php chown -R www-data:www-data /var/www/html/bootstrap/cache
 ```
 ## Usage
 
@@ -39,6 +39,8 @@
 | Composer | `docker-compose run --rm composer` |
 | Npm | `docker-compose run --rm npm` |
 | PHP Artisan | `docker-compose run --rm artisan` |
+
+
 (You can make aliases for this commands in ~/.bashrc)
 
 ## Access
